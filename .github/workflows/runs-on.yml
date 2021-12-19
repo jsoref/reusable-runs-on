@@ -1,0 +1,16 @@
+name: callee
+on:
+  workflow_call:
+    inputs:
+      platform:
+        required: true
+        description: platform
+        type: string
+
+jobs:
+  run:
+    runs-on: ${{ inputs.platform }}
+    steps:
+    - name: bash-version
+      shell: bash
+      run: bash --version

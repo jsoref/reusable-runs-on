@@ -1,0 +1,10 @@
+name: caller
+on:
+  push:
+
+jobs:
+  runner:
+    name: run
+    uses: jsoref/reusable-runs-on/.github/workflows/runs-on.yml@main
+    with:
+      platform: ubuntu-18.04
