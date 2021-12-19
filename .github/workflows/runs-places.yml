@@ -7,4 +7,4 @@ jobs:
     name: run
     uses: jsoref/reusable-runs-on/.github/workflows/runs-on.yml@main
     with:
-      platform: ubuntu-18.04
+      platform: ubuntu-20.04
